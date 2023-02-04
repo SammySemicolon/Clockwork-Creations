@@ -1,0 +1,18 @@
+modLoader = "javafml"
+loaderVersion = "[39,)"
+license = "All rights reserved"
+[[mods]]
+logoFile = "clockwork_creations.png"
+modId = "clockwork_creations"
+version = "${file.jarVersion}"
+displayName = "Clockwork Creations"
+authors = "Sammy;"
+description = '''
+An work in progress high level technology mod.
+'''
+[[dependencies.clockwork_creations]]
+modId = "forge"
+mandatory = true
+versionRange = "[39,)"
+ordering = "NONE"
+side = "BOTH"
