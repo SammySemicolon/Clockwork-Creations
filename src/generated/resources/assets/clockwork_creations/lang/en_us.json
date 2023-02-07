@@ -1,4 +1,13 @@
 {
+  "block.clockwork_creations.dark_oak_cuckoo_clock": "Dark Oak Cuckoo Clock",
+  "block.clockwork_creations.dark_oak_pendulum_clock": "Dark Oak Pendulum Clock",
+  "block.clockwork_creations.dark_oak_regulator_clock": "Dark Oak Regulator Clock",
+  "block.clockwork_creations.oak_cuckoo_clock": "Oak Cuckoo Clock",
+  "block.clockwork_creations.oak_pendulum_clock": "Oak Pendulum Clock",
+  "block.clockwork_creations.oak_regulator_clock": "Oak Regulator Clock",
+  "block.clockwork_creations.spruce_cuckoo_clock": "Spruce Cuckoo Clock",
+  "block.clockwork_creations.spruce_pendulum_clock": "Spruce Pendulum Clock",
+  "block.clockwork_creations.spruce_regulator_clock": "Spruce Regulator Clock",
   "item.clockwork_creations.clock_key": "Clock Key",
   "item.clockwork_creations.clock_spring": "Clock Spring",
   "item.clockwork_creations.clockwork_mechanism": "Clockwork Mechanism",

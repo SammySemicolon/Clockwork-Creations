@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "clockwork_creations:block/oak_cuckoo_clock"
+    },
+    "facing=south": {
+      "model": "clockwork_creations:block/oak_cuckoo_clock",
+      "y": -180
+    },
+    "facing=west": {
+      "model": "clockwork_creations:block/oak_cuckoo_clock",
+      "y": -90
+    },
+    "facing=east": {
+      "model": "clockwork_creations:block/oak_cuckoo_clock",
+      "y": 90
+    }
+  }
+}

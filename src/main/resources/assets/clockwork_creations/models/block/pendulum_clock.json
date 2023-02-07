@@ -1,0 +1,132 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [32, 32],
+	"textures": {
+		"particle": "#clock"
+	},
+	"elements": [
+		{
+			"name": "Pendulum",
+			"from": [7, 2, 11.99],
+			"to": [9, 8, 11.99],
+			"faces": {
+				"north": {"uv": [7, 10, 9, 16], "texture": "#clock"}
+			}
+		},
+		{
+			"name": "Hour Hand",
+			"from": [7.5, 9.5, 11.97],
+			"to": [8.5, 11.5, 11.97],
+			"faces": {
+				"north": {"uv": [7.5, 0.5, 8, 1.5], "texture": "#clock"}
+			}
+		},
+		{
+			"name": "Minute hand",
+			"from": [7.5, 9.5, 11.96],
+			"to": [8.5, 12.5, 11.96],
+			"faces": {
+				"north": {"uv": [7.5, 0, 8, 1.5], "texture": "#clock"}
+			}
+		},
+		{
+			"from": [2, 0, 11],
+			"to": [4, 14, 12],
+			"faces": {
+				"north": {"uv": [5.5, 2, 6.5, 9], "texture": "#clock"},
+				"east": {"uv": [6.5, 2, 7, 9], "texture": "#clock"},
+				"west": {"uv": [13.5, 2, 14, 9], "texture": "#clock"}
+			}
+		},
+		{
+			"from": [12, 0, 11],
+			"to": [14, 14, 12],
+			"faces": {
+				"north": {"uv": [0.5, 2, 1.5, 9], "texture": "#clock"},
+				"east": {"uv": [15.5, 2, 16, 9], "texture": "#clock"},
+				"west": {"uv": [6.5, 2, 7, 9], "texture": "#clock"}
+			}
+		},
+		{
+			"from": [2, 0, 12],
+			"to": [14, 14, 16],
+			"faces": {
+				"north": {"uv": [0.5, 2, 6.5, 9], "texture": "#clock"},
+				"east": {"uv": [13.5, 2, 15.5, 9], "texture": "#clock"},
+				"south": {"uv": [7, 2, 13, 9], "texture": "#clock"},
+				"west": {"uv": [14, 2, 16, 9], "texture": "#clock"}
+			}
+		},
+		{
+			"from": [5, 17, 11],
+			"to": [11, 18, 16],
+			"faces": {
+				"north": {"uv": [2, 0, 5, 0.5], "texture": "#clock"},
+				"east": {"uv": [13.5, 0, 16, 0.5], "texture": "#clock"},
+				"south": {"uv": [2, 0, 5, 0.5], "texture": "#clock"},
+				"west": {"uv": [13.5, 0, 16, 0.5], "texture": "#clock"},
+				"up": {"uv": [2, 10.5, 5, 13], "rotation": 180, "texture": "#clock"}
+			}
+		},
+		{
+			"from": [3, 16, 11],
+			"to": [13, 17, 16],
+			"faces": {
+				"north": {"uv": [1, 0.5, 6, 1], "texture": "#clock"},
+				"east": {"uv": [13.5, 0.5, 16, 1], "texture": "#clock"},
+				"south": {"uv": [1, 0.5, 6, 1], "texture": "#clock"},
+				"west": {"uv": [13.5, 0.5, 16, 1], "texture": "#clock"},
+				"up": {"uv": [1, 10.5, 6, 13], "rotation": 180, "texture": "#clock"}
+			}
+		},
+		{
+			"from": [1, 14, 11],
+			"to": [15, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 1, 7, 2], "texture": "#clock"},
+				"east": {"uv": [13.5, 1, 16, 2], "texture": "#clock"},
+				"south": {"uv": [0, 1, 7, 2], "texture": "#clock"},
+				"west": {"uv": [13.5, 1, 16, 2], "texture": "#clock"},
+				"up": {"uv": [0, 10.5, 7, 13], "rotation": 180, "texture": "#clock"},
+				"down": {"uv": [0, 13, 7, 15.5], "rotation": 180, "texture": "#clock"}
+			}
+		},
+		{
+			"from": [3, -3, 11],
+			"to": [13, -2, 16],
+			"faces": {
+				"north": {"uv": [1, 10, 6, 10.5], "texture": "#clock"},
+				"east": {"uv": [13.5, 10, 16, 10.5], "texture": "#clock"},
+				"south": {"uv": [1, 10, 6, 10.5], "texture": "#clock"},
+				"west": {"uv": [13.5, 10, 16, 10.5], "texture": "#clock"},
+				"down": {"uv": [1, 13, 6, 15.5], "rotation": 180, "texture": "#clock"}
+			}
+		},
+		{
+			"from": [1, -2, 11],
+			"to": [15, 0, 16],
+			"faces": {
+				"north": {"uv": [0, 9, 7, 10], "texture": "#clock"},
+				"east": {"uv": [13.5, 9, 16, 10], "texture": "#clock"},
+				"south": {"uv": [0, 9, 7, 10], "texture": "#clock"},
+				"west": {"uv": [13.5, 9, 16, 10], "texture": "#clock"},
+				"up": {"uv": [0, 10.5, 7, 13], "rotation": 180, "texture": "#clock"},
+				"down": {"uv": [0, 13, 7, 15.5], "rotation": 180, "texture": "#clock"}
+			}
+		},
+		{
+			"name": "Dial",
+			"from": [4, 6, 11.98],
+			"to": [12, 14, 11.98],
+			"faces": {
+				"north": {"uv": [1.5, 2, 5.5, 6], "texture": "#clock"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#clock"},
+				"south": {"uv": [1.5, 2, 5.5, 6], "texture": "#clock"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#clock"},
+				"up": {"uv": [0, 0, 4, 0], "rotation": 180, "texture": "#clock"},
+				"down": {"uv": [0, 0, 4, 0], "rotation": 180, "texture": "#clock"}
+			}
+		}
+	]
+}
