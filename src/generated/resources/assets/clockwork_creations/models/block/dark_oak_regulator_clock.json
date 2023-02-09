@@ -1,6 +1,6 @@
 {
   "parent": "clockwork_creations:block/regulator_clock",
   "textures": {
-    "clock": "clockwork_creations:block/regulator_clock_dark_oak"
+    "clock": "clockwork_creations:block/dark_oak_regulator_clock"
   }
 }

@@ -75,10 +75,9 @@ public class CCBlocks {
     public static <T extends Block> NonNullBiConsumer<DataGenContext<Block, T>, RegistrateBlockstateProvider> clockBlockstate(WoodType woodType) {
         return (ctx, p) -> p.getVariantBuilder(ctx.getEntry()).forAllStates(s -> {
             int rotation = ((int) s.getValue(BlockStateProperties.HORIZONTAL_FACING).toYRot() - 180) % 360;
-            String path = ctx.getEntry().getRegistryName().getPath();
-            String commonName = path.replace(woodType.name() + "_", "");
-            String textureName = commonName +"_"+woodType.name();
-            ModelFile model = p.models().withExistingParent(ctx.getName(), ClockworkCreationsMod.path(commonName)).texture("clock", ClockworkCreationsMod.path("block/" + textureName));
+            String textureName = ctx.getEntry().getRegistryName().getPath();
+            String modelName = textureName.replace(woodType.name() + "_", "");
+            ModelFile model = p.models().withExistingParent(ctx.getName(), ClockworkCreationsMod.path(modelName)).texture("clock", ClockworkCreationsMod.path("block/" + textureName));
             return ConfiguredModel.builder().modelFile(model).rotationY(rotation).build();
         });
     }

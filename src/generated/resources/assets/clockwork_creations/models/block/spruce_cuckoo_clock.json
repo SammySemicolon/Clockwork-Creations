@@ -1,6 +1,6 @@
 {
   "parent": "clockwork_creations:block/cuckoo_clock",
   "textures": {
-    "clock": "clockwork_creations:block/cuckoo_clock_spruce"
+    "clock": "clockwork_creations:block/spruce_cuckoo_clock"
   }
 }
