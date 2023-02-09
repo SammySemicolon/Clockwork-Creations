@@ -1,5 +1,6 @@
 package com.sammy.clockwork_creations.content.block;
 
+import com.sammy.clockwork_creations.setup.CCBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,6 +17,7 @@ public class PendulumClockBlock extends AbstractClockBlock{
 
     public PendulumClockBlock(Properties properties) {
         super(properties);
+        setBlockEntity(CCBlockEntities.PENDULUM_CLOCK);
     }
 
     @Override

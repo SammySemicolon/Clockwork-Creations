@@ -25,7 +25,6 @@ public abstract class AbstractClockBlock extends LodestoneEntityBlock<ClockBlock
 
     public AbstractClockBlock(Properties properties) {
         super(properties);
-        setBlockEntity(CCBlockEntities.CLOCK);
     }
 
     public BlockState rotate(BlockState pState, Rotation pRot) {

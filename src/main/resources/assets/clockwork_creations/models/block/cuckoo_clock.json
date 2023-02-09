@@ -151,34 +151,6 @@
 				"up": {"uv": [12, 0, 16, 10], "rotation": 90, "texture": "#clock"},
 				"down": {"uv": [12, 0, 16, 10], "rotation": 90, "texture": "#clock"}
 			}
-		},
-		{
-			"name": "Hour Hand",
-			"from": [7.5, 6.5, 12.99],
-			"to": [8.5, 8.5, 12.99],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 16]},
-			"faces": {
-				"north": {"uv": [9, 6, 10, 8], "texture": "#clock"},
-				"east": {"uv": [0, 0, 0, 2], "texture": "#clock"},
-				"south": {"uv": [0, 0, 1, 2], "texture": "#clock"},
-				"west": {"uv": [0, 0, 0, 2], "texture": "#clock"},
-				"up": {"uv": [0, 0, 1, 0], "texture": "#clock"},
-				"down": {"uv": [0, 0, 1, 0], "texture": "#clock"}
-			}
-		},
-		{
-			"name": "Minute hand",
-			"from": [7.5, 6.5, 12.98],
-			"to": [8.5, 8.5, 12.98],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 7, 16]},
-			"faces": {
-				"north": {"uv": [9, 6, 10, 8], "texture": "#clock"},
-				"east": {"uv": [0, 0, 0, 2], "texture": "#clock"},
-				"south": {"uv": [0, 0, 1, 2], "texture": "#clock"},
-				"west": {"uv": [0, 0, 0, 2], "texture": "#clock"},
-				"up": {"uv": [0, 0, 1, 0], "texture": "#clock"},
-				"down": {"uv": [0, 0, 1, 0], "texture": "#clock"}
-			}
 		}
 	]
 }
