@@ -1,7 +1,9 @@
 package com.sammy.clockwork_creations;
 
+import com.sammy.clockwork_creations.data.LangMerger;
 import com.sammy.clockwork_creations.setup.*;
 import com.tterrag.registrate.Registrate;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -10,6 +12,7 @@ import net.minecraftforge.common.util.Lazy;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -47,9 +50,18 @@ public class ClockworkCreationsMod {
 		CCItems.register();
 		CCBlocks.register();
 
+		modBus.addListener(DataOnly::gatherData);
 	}
 
 	public static ResourceLocation path(String path) {
 		return new ResourceLocation(MODID, path);
+	}
+
+
+	public static class DataOnly {
+		public static void gatherData(GatherDataEvent event) {
+			DataGenerator generator = event.getGenerator();
+			generator.addProvider(new LangMerger(generator));
+		}
 	}
 }
