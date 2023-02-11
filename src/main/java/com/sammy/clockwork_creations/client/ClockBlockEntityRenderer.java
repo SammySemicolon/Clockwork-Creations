@@ -61,13 +61,13 @@ public abstract class ClockBlockEntityRenderer implements BlockEntityRenderer<Cl
         float time = level.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
 
 
-        float minute = Mth.clamp((time % 1000) / 20, 0, 50);
-        float hour = Mth.clamp(time / 1000, 0, 24);
+        float minute = Mth.clamp((time % 1000) / 20, 0, 50)*6f;
+        float hour = Mth.clamp(time / 1000, 0, 24)*12.5f;
 
 
 
-        renderHand(bufferIn, texture, direction, poseStack, minute*6, getHandOffset(), light, true); //Hour Hand
-        renderHand(bufferIn, texture, direction, poseStack, hour*12.5f, getHandOffset()+0.01f, light, false); //Minute Hand
+        renderHand(bufferIn, texture, direction, poseStack, hour, getHandOffset(), light, true); //Hour Hand
+        renderHand(bufferIn, texture, direction, poseStack, minute, getHandOffset()+0.01f, light, false); //Minute Hand
     }
 
     public float getHandOffset() {
