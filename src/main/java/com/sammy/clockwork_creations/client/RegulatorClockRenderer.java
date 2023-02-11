@@ -42,7 +42,7 @@ public class RegulatorClockRenderer extends ClockBlockEntityRenderer {
                 .setUV(0.875f, 0.03125f, 0.90625f, 0.125f)
                 .setLight(light)
                 .renderQuad(consumer, poseStack, positions, 0.0625f, 0.1875f);
-
+        
         poseStack.popPose();
     }
 }
