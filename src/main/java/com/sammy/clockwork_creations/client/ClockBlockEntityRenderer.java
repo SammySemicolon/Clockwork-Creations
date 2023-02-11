@@ -16,6 +16,9 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.Mth;
+import net.minecraft.world.level.GameRules;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import team.lodestar.lodestone.handlers.RenderHandler;
@@ -53,11 +56,18 @@ public abstract class ClockBlockEntityRenderer implements BlockEntityRenderer<Cl
     }
 
     public void renderMovingClockParts(ClockBlockEntity blockEntity, MultiBufferSource bufferIn, ResourceLocation texture, Direction direction, PoseStack poseStack, int light) {
-        float rotationTime = 24000;
-        float time = Minecraft.getInstance().level.getTimeOfDay(Minecraft.getInstance().getDeltaFrameTime())*rotationTime;
+        Level level = blockEntity.getLevel();
+        float dayTime = (level.getDayTime() % 24000);
+        float time = level.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
 
-        renderHand(bufferIn, texture, direction, poseStack, time*0.05f, getHandOffset(), light, true); //Hour Hand
-        renderHand(bufferIn, texture, direction, poseStack, time*0.3f-150f, getHandOffset()+0.01f, light, false); //Minute Hand
+
+        float minute = Mth.clamp((time % 1000) / 20, 0, 50);
+        float hour = Mth.clamp(time / 1000, 0, 24);
+
+
+
+        renderHand(bufferIn, texture, direction, poseStack, minute*6, getHandOffset(), light, true); //Hour Hand
+        renderHand(bufferIn, texture, direction, poseStack, hour*12.5f, getHandOffset()+0.01f, light, false); //Minute Hand
     }
 
     public float getHandOffset() {
