@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "clockwork_creations:oak_cuckoo_clock",
+    "clockwork_creations:spruce_cuckoo_clock",
+    "clockwork_creations:dark_oak_cuckoo_clock",
+    "clockwork_creations:oak_pendulum_clock",
+    "clockwork_creations:spruce_pendulum_clock",
+    "clockwork_creations:dark_oak_pendulum_clock",
+    "clockwork_creations:oak_regulator_clock",
+    "clockwork_creations:spruce_regulator_clock",
+    "clockwork_creations:dark_oak_regulator_clock"
+  ]
+}

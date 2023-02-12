@@ -8,10 +8,17 @@
   "block.clockwork_creations.spruce_cuckoo_clock": "Spruce Cuckoo Clock",
   "block.clockwork_creations.spruce_pendulum_clock": "Spruce Pendulum Clock",
   "block.clockwork_creations.spruce_regulator_clock": "Spruce Regulator Clock",
+  "clockwork_creations.subtitle.cuckoo_chime": "Cuckoo Clock Chimes",
+  "clockwork_creations.subtitle.cuckoo_tick": "Cuckoo Clock Ticks",
+  "clockwork_creations.subtitle.grandfather_chime": "Pendulum Clock Chimes",
+  "clockwork_creations.subtitle.grandfather_tick": "Pendulum Clock Ticks",
+  "clockwork_creations.subtitle.regulator_chime": "Regulator Clock Chimes",
+  "clockwork_creations.subtitle.regulator_tick": "Regulator Clock Ticks",
   "item.clockwork_creations.clock_key": "Clock Key",
-  "item.clockwork_creations.clock_spring": "Clock Spring",
   "item.clockwork_creations.clockwork_mechanism": "Clockwork Mechanism",
-  "item.clockwork_creations.pendulum_gold": "Pendulum Gold",
-  "item.clockwork_creations.pendulum_iron": "Pendulum Iron",
-  "item.clockwork_creations.pendulum_wood": "Pendulum Wood"
+  "item.clockwork_creations.golden_pendulum": "Golden Pendulum",
+  "item.clockwork_creations.iron_pendulum": "Iron Pendulum",
+  "item.clockwork_creations.mainspring": "Mainspring",
+  "item.clockwork_creations.wooden_pendulum": "Wooden Pendulum",
+  "itemGroup.clockwork_creations": "Clockwork Creations"
 }

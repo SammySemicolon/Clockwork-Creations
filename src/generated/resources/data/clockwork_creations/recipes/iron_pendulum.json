@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "Y"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:rods/wooden"
+    },
+    "Y": {
+      "tag": "forge:ingots/iron"
+    }
+  },
+  "result": {
+    "item": "clockwork_creations:iron_pendulum"
+  }
+}

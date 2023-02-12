@@ -1,5 +1,6 @@
 package com.sammy.clockwork_creations.client;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Vector3f;
@@ -53,6 +54,31 @@ public class PendulumClockRenderer extends ClockBlockEntityRenderer{
                     .renderQuad(consumer, poseStack, positions, 0.0625f, 0.1875f);
         }
 
+        poseStack.popPose();
+    }
+
+    @Override
+    public void renderPendulum(MultiBufferSource bufferIn, ResourceLocation texture, Direction direction, PoseStack poseStack, float swing, int light) {
+        VertexConsumer consumer = bufferIn.getBuffer(LodestoneRenderTypeRegistry.TRANSPARENT_TEXTURE.applyAndCache(texture));
+
+        float start = -0.5f;
+        float end = 0.5f;
+        float zLevel = 1.0025f;
+
+        Vector3f[] positions = new Vector3f[]{new Vector3f(start, start - 0.5f, zLevel), new Vector3f(end, start - 0.5f, zLevel), new Vector3f(end, end - 0.5f, zLevel), new Vector3f(start, end - 0.5f, zLevel)};
+
+        poseStack.pushPose();
+        poseStack.translate(0.5f, 0.5f, 0.5f);
+        poseStack.mulPose(Vector3f.YN.rotationDegrees(direction.toYRot()));
+        poseStack.translate(0, 0, -0.375f);
+        float rotation = swing*15f;
+        poseStack.mulPose(Vector3f.ZN.rotationDegrees(rotation));
+
+        VFXBuilders.createWorld()
+                .setPosColorTexLightmapDefaultFormat()
+                .setUV(0.4375f, 0.625f, 0.5625f, 1)
+                .setLight(light)
+                .renderQuad(consumer, poseStack, positions, 0.125f, 0.375f);
         poseStack.popPose();
     }
 }

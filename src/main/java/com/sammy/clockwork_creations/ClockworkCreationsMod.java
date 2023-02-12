@@ -1,5 +1,6 @@
 package com.sammy.clockwork_creations;
 
+import com.sammy.clockwork_creations.data.CCRecipeProvider;
 import com.sammy.clockwork_creations.data.LangMerger;
 import com.sammy.clockwork_creations.setup.*;
 import com.tterrag.registrate.Registrate;
@@ -64,6 +65,7 @@ public class ClockworkCreationsMod {
 		public static void gatherData(GatherDataEvent event) {
 			DataGenerator generator = event.getGenerator();
 			generator.addProvider(new LangMerger(generator));
+			generator.addProvider(new CCRecipeProvider(generator));
 		}
 	}
 }

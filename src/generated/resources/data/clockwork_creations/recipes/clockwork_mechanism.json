@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "YXZ",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/iron"
+    },
+    "Y": {
+      "item": "clockwork_creations:clock_key"
+    },
+    "Z": {
+      "item": "clockwork_creations:mainspring"
+    }
+  },
+  "result": {
+    "item": "clockwork_creations:clockwork_mechanism"
+  }
+}

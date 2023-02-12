@@ -63,6 +63,8 @@ public abstract class ClockBlockEntityRenderer implements BlockEntityRenderer<Cl
         float time = level.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
         float hour = Mth.clamp(time / 1000, 0, 24)*25f;
         float minute = (Mth.clamp((time % 1000) / 20, 0, 50)-25)*6f;
+        float pendulum = (float) Math.sin((time/20) * Math.PI);
+        renderPendulum(bufferIn, texture, direction, poseStack, pendulum, light);
         renderHand(bufferIn, texture, direction, poseStack, hour, getHandOffset(), light, true); //Hour Hand
         renderHand(bufferIn, texture, direction, poseStack, minute, getHandOffset()+0.01f, light, false); //Minute Hand
     }
@@ -72,4 +74,8 @@ public abstract class ClockBlockEntityRenderer implements BlockEntityRenderer<Cl
     }
 
     public abstract void renderHand(MultiBufferSource bufferIn, ResourceLocation texture, Direction direction, PoseStack poseStack, float rotation, float zLevel, int light, boolean hourHand);
+
+    public void renderPendulum(MultiBufferSource bufferIn, ResourceLocation texture, Direction direction, PoseStack poseStack, float swing, int light) {
+
+    }
 }

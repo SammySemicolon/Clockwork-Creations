@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XZX",
+    "XYX",
+    "XWX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:spruce_planks"
+    },
+    "Y": {
+      "item": "clockwork_creations:iron_pendulum"
+    },
+    "Z": {
+      "item": "clockwork_creations:clockwork_mechanism"
+    },
+    "W": {
+      "tag": "forge:glass_panes"
+    }
+  },
+  "result": {
+    "item": "clockwork_creations:spruce_pendulum_clock"
+  }
+}

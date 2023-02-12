@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "clockwork_creations:item/clock_spring"
+    "layer0": "clockwork_creations:item/mainspring"
   }
 }

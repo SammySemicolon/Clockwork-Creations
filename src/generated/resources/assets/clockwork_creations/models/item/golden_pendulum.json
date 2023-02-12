@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "clockwork_creations:item/pendulum_iron"
+    "layer0": "clockwork_creations:item/golden_pendulum"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XZX",
+    "XYX",
+    "X X"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:spruce_planks"
+    },
+    "Y": {
+      "item": "clockwork_creations:wooden_pendulum"
+    },
+    "Z": {
+      "item": "clockwork_creations:clockwork_mechanism"
+    }
+  },
+  "result": {
+    "item": "clockwork_creations:spruce_cuckoo_clock"
+  }
+}
