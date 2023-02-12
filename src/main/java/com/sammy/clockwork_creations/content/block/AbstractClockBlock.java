@@ -2,6 +2,7 @@ package com.sammy.clockwork_creations.content.block;
 
 import com.sammy.clockwork_creations.setup.CCBlockEntities;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -26,6 +27,10 @@ public abstract class AbstractClockBlock extends LodestoneEntityBlock<ClockBlock
     public AbstractClockBlock(Properties properties) {
         super(properties);
     }
+
+    public abstract SoundEvent getTickSound();
+
+    public abstract SoundEvent getChimeSound();
 
     public BlockState rotate(BlockState pState, Rotation pRot) {
         return pState.setValue(FACING, pRot.rotate(pState.getValue(FACING)));

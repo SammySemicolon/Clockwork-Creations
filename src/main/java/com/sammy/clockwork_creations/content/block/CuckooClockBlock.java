@@ -1,7 +1,9 @@
 package com.sammy.clockwork_creations.content.block;
 
 import com.sammy.clockwork_creations.setup.CCBlockEntities;
+import com.sammy.clockwork_creations.setup.CCSounds;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -18,6 +20,16 @@ public class CuckooClockBlock extends AbstractClockBlock{
     public CuckooClockBlock(Properties properties) {
         super(properties);
         setBlockEntity(CCBlockEntities.CUCKOO_CLOCK);
+    }
+
+    @Override
+    public SoundEvent getTickSound() {
+        return CCSounds.CUCKOO_TICK.get();
+    }
+
+    @Override
+    public SoundEvent getChimeSound() {
+        return CCSounds.CUCKOO_CHIME.get();
     }
 
     @Override

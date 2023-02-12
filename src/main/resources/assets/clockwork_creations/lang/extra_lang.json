@@ -1,3 +1,9 @@
 {
-	"itemGroup.clockwork_creations": "Clockwork Creations"
+	"itemGroup.clockwork_creations": "Clockwork Creations",
+	"clockwork_creations.subtitle.cuckoo_chime": "Cuckoo Clock Chimes",
+	"clockwork_creations.subtitle.cuckoo_tick": "Cuckoo Clock Ticks",
+	"clockwork_creations.subtitle.regulator_chime": "Regulator Clock Chimes",
+	"clockwork_creations.subtitle.regulator_tick": "Regulator Clock Ticks",
+	"clockwork_creations.subtitle.grandfather_chime": "Pendulum Clock Chimes",
+	"clockwork_creations.subtitle.grandfather_tick": "Pendulum Clock Ticks"
 }

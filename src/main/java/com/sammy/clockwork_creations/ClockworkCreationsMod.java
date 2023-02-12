@@ -50,6 +50,8 @@ public class ClockworkCreationsMod {
 		CCItems.register();
 		CCBlocks.register();
 
+		CCSounds.SOUNDS.register(modBus);
+
 		modBus.addListener(DataOnly::gatherData);
 	}
 

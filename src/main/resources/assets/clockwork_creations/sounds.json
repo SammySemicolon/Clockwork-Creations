@@ -1,0 +1,8 @@
+{
+  "cuckoo_chime": { "sounds":["clockwork_creations:cuckoo_chime"], "subtitle": "clockwork_creations.subtitle.cuckoo_chime" },
+  "cuckoo_tick": { "sounds":["clockwork_creations:cuckoo_tick"], "subtitle": "clockwork_creations.subtitle.cuckoo_tick" },
+  "regulator_chime": { "sounds":["clockwork_creations:regulator_chime"], "subtitle": "clockwork_creations.subtitle.regulator_chime" },
+  "regulator_tick": { "sounds":["clockwork_creations:regulator_tick"], "subtitle": "clockwork_creations.subtitle.regulator_tick" },
+  "grandfather_chime": { "sounds":["clockwork_creations:grandfather_chime"], "subtitle": "clockwork_creations.subtitle.grandfather_chime" },
+  "grandfather_tick": { "sounds":["clockwork_creations:grandfather_tick"], "subtitle": "clockwork_creations.subtitle.grandfather_tick" }
+}
