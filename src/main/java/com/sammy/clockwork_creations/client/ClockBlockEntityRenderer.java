@@ -54,13 +54,13 @@ public abstract class ClockBlockEntityRenderer implements BlockEntityRenderer<Cl
     @Override
     public void render(ClockBlockEntity blockEntityIn, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn, int combinedLightIn, int combinedOverlayIn) {
         Direction direction = blockEntityIn.getBlockState().getValue(BlockStateProperties.HORIZONTAL_FACING);
-        renderMovingClockParts(blockEntityIn, bufferIn, overlayHashmap.get(blockEntityIn.getBlockState().getBlock()), direction, poseStack, combinedLightIn);
+        renderMovingClockParts(blockEntityIn, partialTicks, bufferIn, overlayHashmap.get(blockEntityIn.getBlockState().getBlock()), direction, poseStack, combinedLightIn);
     }
 
-    public void renderMovingClockParts(ClockBlockEntity blockEntity, MultiBufferSource bufferIn, ResourceLocation texture, Direction direction, PoseStack poseStack, int light) {
+    public void renderMovingClockParts(ClockBlockEntity blockEntity, float partialTicks, MultiBufferSource bufferIn, ResourceLocation texture, Direction direction, PoseStack poseStack, int light) {
         Level level = blockEntity.getLevel();
-        float dayTime = (level.getDayTime() % 24000);
-        float time = level.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
+        float dayTime = ((level.getDayTime()+partialTicks) % 24000);
+        float time = level.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : ((level.getGameTime()+partialTicks) % 24000);
         float hour = Mth.clamp(time / 1000, 0, 24)*25f;
         float minute = (Mth.clamp((time % 1000) / 20, 0, 50)-25)*6f;
         float pendulum = (float) Math.sin((time/20) * Math.PI);
