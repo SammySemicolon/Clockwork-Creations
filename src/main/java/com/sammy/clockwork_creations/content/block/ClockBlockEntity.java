@@ -18,13 +18,13 @@ public class ClockBlockEntity extends LodestoneBlockEntity {
     public void tick() {
         super.tick();
         if (level instanceof ServerLevel serverLevel) {
-            float dayTime = (serverLevel.getDayTime() % 24000);
-            float time = serverLevel.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
-            if (dayTime % 23 == 0) {
+            int dayTime = (int) (serverLevel.getDayTime() % 24000);
+            int time = serverLevel.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
+            if (dayTime % 20 == 0) {
                 serverLevel.playSound(null, worldPosition, getBlock().getTickSound(), SoundSource.BLOCKS, 1f, 1f);
             }
             if (time == 6000 || time == 6030 || time == 18000) {
-                serverLevel.playSound(null, worldPosition, getBlock().getChimeSound(), SoundSource.BLOCKS, 2f, 1f);
+                serverLevel.playSound(null, worldPosition, getBlock().getChimeSound(), SoundSource.BLOCKS, 0.75f, 1f);
             }
         }
     }
