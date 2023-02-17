@@ -1,3 +1,6 @@
 {
-  "parent": "clockwork_creations:block/oak_regulator_clock"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "clockwork_creations:item/oak_regulator_clock"
+  }
 }

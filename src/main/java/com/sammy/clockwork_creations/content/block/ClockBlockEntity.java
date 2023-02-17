@@ -21,7 +21,7 @@ public class ClockBlockEntity extends LodestoneBlockEntity {
             int dayTime = (int) (serverLevel.getDayTime() % 24000);
             int time = serverLevel.getGameRules().getBoolean(GameRules.RULE_DAYLIGHT) ? dayTime : (int) (level.getGameTime() % 24000);
             if (dayTime % 20 == 0) {
-                serverLevel.playSound(null, worldPosition, getBlock().getTickSound(), SoundSource.BLOCKS, 1f, 1f);
+                serverLevel.playSound(null, worldPosition, getBlock().getTickSound(), SoundSource.BLOCKS, 0.1f, 1f);
             }
             if (time == 6000 || time == 6030 || time == 18000) {
                 serverLevel.playSound(null, worldPosition, getBlock().getChimeSound(), SoundSource.BLOCKS, 0.75f, 1f);

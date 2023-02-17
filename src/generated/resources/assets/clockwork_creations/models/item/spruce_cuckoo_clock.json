@@ -1,3 +1,6 @@
 {
-  "parent": "clockwork_creations:block/spruce_cuckoo_clock"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "clockwork_creations:item/spruce_cuckoo_clock"
+  }
 }

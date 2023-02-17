@@ -31,55 +31,55 @@ public class CCBlocks {
     public static final BlockEntry<CuckooClockBlock> OAK_CUCKOO_CLOCK = setupBlock("oak_cuckoo_clock", CuckooClockBlock::new, LodestoneBlockProperties.copy(Blocks.OAK_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.OAK))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<CuckooClockBlock> SPRUCE_CUCKOO_CLOCK = setupBlock("spruce_cuckoo_clock", CuckooClockBlock::new, LodestoneBlockProperties.copy(Blocks.SPRUCE_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.SPRUCE))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<CuckooClockBlock> DARK_OAK_CUCKOO_CLOCK = setupBlock("dark_oak_cuckoo_clock", CuckooClockBlock::new, LodestoneBlockProperties.copy(Blocks.DARK_OAK_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.DARK_OAK))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<PendulumClockBlock> OAK_PENDULUM_CLOCK = setupBlock("oak_pendulum_clock", PendulumClockBlock::new, LodestoneBlockProperties.copy(Blocks.OAK_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.OAK))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<PendulumClockBlock> SPRUCE_PENDULUM_CLOCK = setupBlock("spruce_pendulum_clock", PendulumClockBlock::new, LodestoneBlockProperties.copy(Blocks.SPRUCE_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.SPRUCE))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<PendulumClockBlock> DARK_OAK_PENDULUM_CLOCK = setupBlock("dark_oak_pendulum_clock", PendulumClockBlock::new, LodestoneBlockProperties.copy(Blocks.DARK_OAK_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.DARK_OAK))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<RegulatorClockBlock> OAK_REGULATOR_CLOCK = setupBlock("oak_regulator_clock", RegulatorClockBlock::new, LodestoneBlockProperties.copy(Blocks.OAK_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.OAK))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<RegulatorClockBlock> SPRUCE_REGULATOR_CLOCK = setupBlock("spruce_regulator_clock", RegulatorClockBlock::new, LodestoneBlockProperties.copy(Blocks.SPRUCE_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.SPRUCE))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static final BlockEntry<RegulatorClockBlock> DARK_OAK_REGULATOR_CLOCK = setupBlock("dark_oak_regulator_clock", RegulatorClockBlock::new, LodestoneBlockProperties.copy(Blocks.DARK_OAK_PLANKS).isCutoutLayer())
             .blockstate(clockBlockstate(WoodType.DARK_OAK))
             .tag(BlockTags.MINEABLE_WITH_AXE)
-            .simpleItem()
+            .item().model((c, p) -> p.generated(c)).build()
             .register();
 
     public static <T extends Block> NonNullBiConsumer<DataGenContext<Block, T>, RegistrateBlockstateProvider> clockBlockstate(WoodType woodType) {

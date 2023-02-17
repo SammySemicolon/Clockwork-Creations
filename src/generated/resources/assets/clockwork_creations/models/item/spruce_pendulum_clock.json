@@ -1,3 +1,6 @@
 {
-  "parent": "clockwork_creations:block/spruce_pendulum_clock"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "clockwork_creations:item/spruce_pendulum_clock"
+  }
 }
