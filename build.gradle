@@ -93,6 +93,10 @@ minecraft {
 repositories {
     mavenCentral()
     maven {
+        name 'Curios maven'
+        url = "https://maven.theillusivec4.top/"
+    }
+    maven {
         name 'JEI maven'
         url = "https://dvs1.progwml6.com/files/maven"
     }

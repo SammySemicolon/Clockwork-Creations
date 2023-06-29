@@ -13,6 +13,6 @@ A small mod centered around clocks.
 [[dependencies.clockwork_creations]]
 modId = "forge"
 mandatory = true
-versionRange = "[39,)"
+versionRange = "[40.2,)"
 ordering = "NONE"
 side = "BOTH"
